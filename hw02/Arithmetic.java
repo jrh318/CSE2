@@ -77,6 +77,8 @@ public class Arithmetic{
         
         //print everything
         
+        //int glassInt = (int)totalGlassesTax$;
+        
         //socks 
         System.out.println("number of socks purchased " + nSocks);    
         System.out.println("at a price of " + sockCost$);

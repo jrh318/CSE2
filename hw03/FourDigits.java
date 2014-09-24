@@ -38,13 +38,9 @@ public class FourDigits{
         //fours digit
         int x4 = y%10;
         y = y/10; 
-        
-        
-        
-        
+    
         System.out.println("The four digits to the right of the decimal point are: " + x4 + x3 + x2 + x1);
 
-        
     }
     
 }

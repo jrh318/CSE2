@@ -84,46 +84,28 @@ public class HW8 {
     public static char getInput(Scanner scan, String phrase, String numbers){
        
         System.out.println(phrase); //printing the phrase
-        
-        if (scan.hasNextInt()){ //check if int
+
+        //if (scan.hasNextInt()){ //check if int
             
-            String input = scan.next(); //scanning for input
+                String input = scan.next(); //scanning for input
                 
-            switch(input){ //cases 0-9
+                if (input.equals("1") || input.equals("2") || input.equals("3") || input.equals("4") || input.equals("5") || input.equals("6") || input.equals("7") || input.equals("8") || input.equals("9")){
+                    return input.charAt(0);
+                }
+                
+                else{
+                    System.out.println("This is not an acceptable character");
+                    return getInput(scan, "Choose a digit.", "0123456789");
+                }
             
-                case "0":
-                    return '0';
-                case "1":
-                    return '1';
-                case "2":
-                    return '2';
-                case "3":
-                    return '3';
-                case "4":
-                    return '4';
-                case "5"
-                    return '5';
-                case "6":
-                    return '6';
-                case "7":
-                    return '7';
-                case "8":
-                    return '8';
-                case "9":
-                    return '9';
-                default: //out of range 
-                    System.out.println("Your number is out of the range!");
-                    return getInput(scan, "Choose a digit.", "0123456789"); //trying again 
-                    
-            }
-            
-        }
+        //}
         
-        else{ //not an int
+       /* else{ //not an int
         
             System.out.println("This is not a correct character");
             return getInput(scan, "Choose a digit.", "0123456789"); //trying again
         }
+        */
     }
     
     
